@@ -1,2 +1,19 @@
+/* CUSTOMISE STYLES */
 
+.main_section {
+    background-image: url('../assets/main_background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
 
+.lf-part {
+    position: relative;
+    top:50px; 
+    left:50px;
+}
+
+.rt-part {
+    position: relative;
+    top: 20rem;
+    left: 12rem; 
+}
