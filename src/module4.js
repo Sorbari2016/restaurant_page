@@ -4,6 +4,7 @@ import { clearPageContent } from "./module2.js";
 import { backgroundFooter } from "./javascript.js";
 
 import friedRiceImg from '../assets/fried_rice.jpg';
+import AppetizersImg from '../assets/appetisers.jpg';
   
 
 function loadMenuTab() {
@@ -36,16 +37,37 @@ function loadMenuTab() {
                 </div>
                 <div class = "col placard">
                     <img src = "${friedRiceImg}" alt = "fried rice picture">
-                
                 </div>
             </div>
+
             <div class = "row">
-                <div class = "col card"></div>
-                <div class = "col placard"></div>
+                <div class = "col card">
+                    <h3> Appetizers </h3> 
+                    <hr/>
+                    <p>
+                    Avocado Toast       ₦7,000. <br/>
+                    Spaghetti Pie       ₦5,000. <br/>
+                    Chicken Pie     ₦6,000. 
+                    </p>
+                </div>
+                <div class = "col placard">
+                    <img src = "${AppetizersImg}" alt = "fried rice picture">
+                </div>
             </div>
+
             <div class = "row">
-                <div class = "col card"></div>
-                <div class = "col placard"></div>
+                <div class = "col card">
+                    <h3> Drinks </h3> 
+                    <hr/>
+                    <p>
+                    Lemonade            ₦7,000. <br/>
+                    Smoothie           ₦5,000. <br/>
+                    Fresh Juice        ₦6,000. 
+                    </p>
+                </div>
+                <div class = "col placard">
+                    <img src = "${friedRiceImg}" alt = "fried rice picture">
+                </div>
             </div>
         
         `;
