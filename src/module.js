@@ -1,6 +1,6 @@
 // FIRST MODULE
 
-function Homepage() {
+function homepage() {
 // Content the DOM element content
 const content = document.getElementById("content"); 
 
@@ -69,7 +69,7 @@ footer.appendChild(footerText);
 
 // Export the function
  
-export default Homepage; 
+export default homepage; 
 
  
 

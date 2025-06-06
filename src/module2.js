@@ -2,11 +2,15 @@
 
 import { backgroundFooter } from "./javascript.js";
 
+function clearPageContent() {
+  const content = document.getElementById("content"); 
+    
+  content.innerHTML = "";
+}
 
 function bookLoad() {
 const book = document.getElementById("bookTab"); 
 const content = document.getElementById("content"); 
-
 
 
 const bodyContainer = document.createElement("div"); 
@@ -14,12 +18,10 @@ bodyContainer.classList.add("container");
 content.appendChild(bodyContainer);
 
 
-
 book.addEventListener("click",function(e) {
     e.preventDefault(); 
 
-    content.innerHTML = "";
-
+    clearPageContent(); 
     bookContent(); 
 });
 
@@ -65,11 +67,12 @@ function bookContent() {
     form.reset();
   });
 }
+  return clearPageContent; 
 
 }
 
 
-export {bookLoad}; 
+export {bookLoad, clearPageContent}; 
 
 
 
