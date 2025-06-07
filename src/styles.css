@@ -21,6 +21,45 @@
     top: 25rem;
 }
 
+/* Dimension for the menu images */
+.col img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid black; 
+}
+
+.menuInfo {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+
+.placard {
+    background-color: yellow;
+    height: auto;
+}
+
+.card, 
+.placard {
+    margin: 5px;
+}
+
+.menuHeading {
+    text-align: center;
+    padding: 5px;
+}
+
+.placard {
+    height: inherit;
+}
+
+
+
+
+
+
+
 
 
 
