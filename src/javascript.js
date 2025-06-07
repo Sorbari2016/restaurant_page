@@ -11,7 +11,7 @@ content.append(footerContainer);
 
 // Create the footer element,its classes and append to content
 const footer = document.createElement("footer"); 
-footer.classList.add("d-flex", "flex-wrap", "justify-content-between", "align-items-center", "py-3", "border-top");
+footer.classList.add("d-flex", "flex-wrap", "align-items-center", "py-3", "border-top");
 footerContainer.appendChild(footer);
 
 // Create paragraph to hold the footer text

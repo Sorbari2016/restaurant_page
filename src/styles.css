@@ -11,6 +11,9 @@ body > .container {
     padding-right: 0;
 }
 
+
+
+
 .main_section {
     background-image: url('../assets/main_background.jpg');
     background-size: cover;
@@ -79,6 +82,17 @@ footer {
 .container:nth-child(2) {
     padding-left: 0;
     padding-right: 0;
+}
+
+button {
+    width: 200px;
+    height:50px; 
+    margin-left: 3rem;
+    font-weight: 800;
+}
+
+footer.justify-content-between {
+    justify-content: center !important; 
 }
 
 
