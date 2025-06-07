@@ -4,7 +4,8 @@ import { clearPageContent } from "./module2.js";
 import { backgroundFooter } from "./javascript.js";
 
 import friedRiceImg from '../assets/fried_rice.jpg';
-import AppetizersImg from '../assets/appetisers.jpg';
+import appetizersImg from '../assets/appetisers.jpg';
+import smoothie from '../assets/cool_smoothie.jpg'; 
   
 
 function loadMenuTab() {
@@ -51,7 +52,7 @@ function loadMenuTab() {
                     </p>
                 </div>
                 <div class = "col placard">
-                    <img src = "${AppetizersImg}" alt = "fried rice picture">
+                    <img src = "${appetizersImg}" alt = "fried rice picture">
                 </div>
             </div>
 
@@ -66,7 +67,7 @@ function loadMenuTab() {
                     </p>
                 </div>
                 <div class = "col placard">
-                    <img src = "${friedRiceImg}" alt = "fried rice picture">
+                    <img src = "${smoothie}" alt = "fried rice picture">
                 </div>
             </div>
         
