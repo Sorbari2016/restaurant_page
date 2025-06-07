@@ -3,12 +3,6 @@ function backgroundFooter() {
 
 const content = document.getElementById("content"); 
 
-// const bodyContainer = document.createElement("div"); 
-// bodyContainer.classList.add("container"); 
-// content.appendChild(bodyContainer); 
-
-// bodyContainer.style.backgroundColor ="red"; 
-
     // THE FOOTER SECTION
 const footerContainer = document.createElement("div"); 
 footerContainer.classList.add("container"); 

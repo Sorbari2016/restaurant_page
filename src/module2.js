@@ -2,14 +2,8 @@
 
 import { backgroundFooter } from "./javascript.js";
 
-function clearPageContent() {
-  const content = document.getElementById("content"); 
-    
-  content.innerHTML = "";
-}
 
-function bookLoad() {
-const book = document.getElementById("bookTab"); 
+function loadBookTab() { 
 const content = document.getElementById("content"); 
 
 
@@ -17,17 +11,7 @@ const bodyContainer = document.createElement("div");
 bodyContainer.classList.add("container"); 
 content.appendChild(bodyContainer);
 
-
-book.addEventListener("click",function(e) {
-    e.preventDefault(); 
-
-    clearPageContent(); 
-    bookContent(); 
-});
-
 function bookContent() {   
-    
-    
 
   const bodyContainer = document.createElement("div"); 
   bodyContainer.classList.add("container"); 
@@ -67,12 +51,11 @@ function bookContent() {
     form.reset();
   });
 }
-  return clearPageContent; 
-
+  bookContent();  
 }
 
 
-export {bookLoad, clearPageContent}; 
+export {loadBookTab}; 
 
 
 
