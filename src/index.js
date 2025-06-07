@@ -11,12 +11,21 @@ import 'bootstrap';
 import './styles.css';
 
 
-// To clear the content area: 
+// Clear the content area: 
 function clearPageContent() {
     const content = document.getElementById("content"); 
       
     content.innerHTML = "";
 }
+
+// Remove the active class from all tab buttons
+function clearActiveTab() {
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+}
+
+
 
 function switchTabs() {
     // For the home button
@@ -24,6 +33,8 @@ function switchTabs() {
     homeTab.addEventListener("click", function(e){
         e.preventDefault(); 
         clearPageContent(); 
+        clearActiveTab();
+        e.target.classList.add('active');
         homepage(); 
     }); 
 
@@ -31,14 +42,18 @@ function switchTabs() {
     const bookTab = document.getElementById("bookTab"); 
     bookTab.addEventListener("click", function(e) {
         e.preventDefault(); 
-        clearPageContent(); 
+        clearPageContent();
+        clearActiveTab();
+        e.target.classList.add('active'); 
         loadBookTab(); 
     }); 
 
     const menuTab = document.getElementById("menuTab"); 
     menuTab.addEventListener("click", function(e){
         e.preventDefault(); 
-        clearPageContent(); 
+        clearPageContent();
+        clearActiveTab();
+        e.target.classList.add('active'); 
         loadMenuTab(); 
     })
 
