@@ -3,56 +3,64 @@
 import { backgroundFooter } from "./javascript.js";
 
 
-function loadBookTab() { 
-const content = document.getElementById("content"); 
+function loadBookTab() {
+  const content = document.getElementById("content");
 
+  function bookContent() {
+    const bodyContainer = document.createElement("div");
+    bodyContainer.classList.add("container","bookcontainer");
+    content.appendChild(bodyContainer);
 
-const bodyContainer = document.createElement("div"); 
-bodyContainer.classList.add("container"); 
-content.appendChild(bodyContainer);
-
-function bookContent() {   
-
-  const bodyContainer = document.createElement("div"); 
-  bodyContainer.classList.add("container"); 
-  content.appendChild(bodyContainer);
-     
     bodyContainer.innerHTML = `
-    <form id="bookingForm">
-      <label>Name</label><br>
-      <input type="text" name="name" required><br><br>
+      <form id="bookingForm">
+        <h3> Reserve Your Table</h3>
+        <hr/>
+        <p>
+          <label>Name</label>
+          <input type="text" name="name" required>
+        </p>
 
-      <label>Email</label><br>
-      <input type="email" name="email" required><br><br>
+        <p>
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </p>
+        
+        <p>
+          <label>Phone Number</label>
+          <input type="tel" name="phone" required>
+        </p>
 
-      <label>Phone Number</label><br>
-      <input type="tel" name="phone" required><br><br>
+        <p>
+          <label>Number of Guests</label>
+          <input type="number" name="guests" required>
+        </p>
 
-      <label>Number of Guests</label><br>
-      <input type="number" name="guests" required><br><br>
+        <p>
+          <label>Special Note:</label>
+          <textarea name="note"></textarea>
+        </p>
 
-      <label>Special Note:</label><br>
-      <textarea name="note" rows="4" cols="30"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    
+      </form>
+    `;
 
-      <button type="submit">Submit</button>
-    </form>
+    bodyContainer.style.backgroundColor = "#F5EFFF"; 
 
-  `;
-  backgroundFooter(); 
-  bodyContainer.style.backgroundColor = "red"; 
+    backgroundFooter();
 
+    const form = document.getElementById("bookingForm");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Form submitted!");
+      form.reset();
+    });
+  }
 
-
-  // Add submit handler
-  const form = document.getElementById("bookingForm");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Form submitted!");
-    form.reset();
-  });
+  bookContent();
 }
-  bookContent();  
-}
+
 
 
 export {loadBookTab}; 

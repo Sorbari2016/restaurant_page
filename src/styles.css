@@ -96,6 +96,51 @@ footer.justify-content-between {
 }
 
 
+/* Booking Form */
+#bookingForm {
+    padding: 20px;
+    width:40%; 
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgrey;
+}
+
+#bookingForm hr {
+    border: 1px solid black;
+}
+
+#bookingForm p {
+    display: flex;
+    flex-direction: column; 
+}
+
+#bookingForm > button {
+    width: 100px; 
+    border-radius: 10px;
+    align-self: center;
+    margin-left: 0;
+}
+
+
+#bookingForm > h3 {
+    margin-bottom: 10px ; 
+    text-align: center;
+}
+
+.bookcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea {   
+    border-radius: 10px;
+    border: 1px solid grey; 
+}
+
+
+
 
 
 
