@@ -35,38 +35,6 @@ body > .container {
     top: 25rem;
 }
 
-/* Dimension for the menu images */
-.col img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 1px solid black; 
-}
-
-.menuInfo {
-    display: flex;
-    gap: 10px;
-    margin: 5px;
-}
-
-.placard {
-    background-color: yellow;
-    height: auto;
-}
-
-.card, 
-.placard {
-    margin: 5px;
-}
-
-.menuHeading {
-    text-align: center;
-    padding: 5px;
-}
-
-.placard {
-    height: inherit;
-}
 
 /* .tab.active {
     background-color: red; 
@@ -137,6 +105,73 @@ footer.justify-content-between {
 input, textarea {   
     border-radius: 10px;
     border: 1px solid grey; 
+}
+
+
+/* MENU PAGE */
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+/* Dimension for the menu images */
+.col img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid black; 
+}
+
+.menuInfo {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+
+.placard {
+    background-color: yellow;
+    height: auto;
+}
+
+.card, 
+.placard {
+    margin: 5px;
+}
+
+.card {
+    padding-left: 5px;
+    padding: 5px 5px; 
+    width: 350px;
+}
+
+.card hr {
+    margin-top: 0; 
+}
+
+.menuHeading {
+    text-align: center;
+    padding: 5px;
+}
+
+.placard {
+    height: inherit;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu_list_item {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.price {
+    justify-self: end;
+    font-weight: 700; 
 }
 
 

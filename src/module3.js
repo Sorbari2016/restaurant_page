@@ -14,17 +14,23 @@ function loadMenuTab() {
 
     bodyContainer.innerHTML = `
         <h1 class ="menuHeading">Food Menu</h1>
+        <h4> Sarah's Delicacies</h4>
+        <hr/>
         <div class = "row">
             <div class = "col">
                 <div class = "card">
                     <h3> Main Course </h3> 
                     <hr/>
-                    <p>
-                    Fried rice          ₦7,000. <br/>
-                    Spicey Chicken      ₦5,000. <br/>
-                    Deep Bake Goose     ₦6,000. 
-                    </p>
-                </div>
+                    <div class="menu_list_item">
+                        <span class = "item">Fried rice</span>
+                        <span class = "price">₦7,000.</span>
+                        <span class = "item">Spicey Chicken</span>
+                        <span class = "price">₦5,000.</span>
+                        <span class = "item">Deep Bake Goose</span>
+                        <span class = "price">₦6,000. </span>
+                    </div>
+                </div>      
+                
             </div>    
             <div class = "col">
                 <div class = "placard">
@@ -38,11 +44,14 @@ function loadMenuTab() {
                 <div class = "card">
                     <h3> Appetizers </h3> 
                     <hr/>
-                    <p>
-                    Avocado Toast  ₦7,000.<br/>
-                    Spaghetti Pie       ₦5,000. <br/>
-                    Chicken Pie     ₦6,000. 
-                    </p>
+                    <div class="menu_list_item">
+                        <span class = "item">Chicken Pie</span>
+                        <span class = "price">₦4,500.</span>
+                        <span class = "item">Vegetable Salad</span>
+                        <span class = "price">₦3,000.</span>
+                        <span class = "item">Spaghetti Pasta</span>
+                        <span class = "price">₦5,000. </span>
+                    </div>
                 </div>
             </div>
             <div class = "col">
@@ -57,11 +66,14 @@ function loadMenuTab() {
                 <div class = "card">
                     <h3> Drinks </h3> 
                     <hr/>
-                    <p>
-                    Lemonade            ₦7,000. <br/>
-                    Smoothie           ₦5,000. <br/>
-                    Fresh Juice        ₦6,000. 
-                    </p>
+                    <div class="menu_list_item">
+                        <span class = "item">Lemonade</span>
+                        <span class = "price">₦13,000.</span>
+                        <span class = "item">Smoothie</span>
+                        <span class = "price">₦8,000.</span>
+                        <span class = "item">Fresh Juice</span>
+                        <span class = "price">₦4,000. </span>
+                    </div>
                 </div>
             </div>
             <div class = "col">
@@ -85,7 +97,7 @@ function loadMenuTab() {
         `;
 
     backgroundFooter(); 
-    bodyContainer.style.backgroundColor = "red"; 
+    bodyContainer.style.backgroundColor = "#F5EFFF"; 
 
 }   
 
