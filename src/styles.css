@@ -133,7 +133,7 @@ hr {
 }
 
 .placard {
-    background-color: yellow;
+    background-color: darkgrey;
     height: auto;
 }
 
@@ -142,10 +142,13 @@ hr {
     margin: 5px;
 }
 
+.card, .placard {
+    width: 350px;
+}
+
 .card {
     padding-left: 5px;
     padding: 5px 5px; 
-    width: 350px;
 }
 
 .card hr {
@@ -160,7 +163,8 @@ hr {
 .placard {
     height: inherit;
     padding: 5px;
-    border-radius: 10px;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 
 .menu_list_item {
@@ -172,6 +176,10 @@ hr {
 .price {
     justify-self: end;
     font-weight: 700; 
+}
+
+.placard img {
+    margin-left: 1rem;
 }
 
 
