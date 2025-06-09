@@ -89,9 +89,7 @@ function loadMenuTab() {
                     <p>www.sarah'delicacy.com<p>
                 </div>
             </div>
-            <div class = "col">
-                <hr/>
-            </div>
+            <div class = "col"></div>
 
         </div>
         `;
