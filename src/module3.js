@@ -9,7 +9,7 @@ import smoothie from '../assets/cool_smoothie.jpg';
 
 function loadMenuTab() {
     const bodyContainer = document.createElement("div"); 
-    bodyContainer.classList.add("container"); 
+    bodyContainer.classList.add("container", "menucontainer"); 
     content.appendChild(bodyContainer);
 
     bodyContainer.innerHTML = `

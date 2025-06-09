@@ -36,11 +36,10 @@ body > .container {
 }
 
 
-/* .tab.active {
-    background-color: red; 
+.tab.active {
     color: white; 
-    font-weight: bold;
-} */
+    font-weight: 600;
+}
 
 /* Footer Section  */
 footer {
@@ -149,6 +148,7 @@ hr {
 .card {
     padding-left: 5px;
     padding: 5px 5px; 
+    border: 2px solid darkgrey;
 }
 
 .card hr {
@@ -180,6 +180,13 @@ hr {
 
 .placard img {
     margin-left: 1rem;
+}
+
+.menucontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1rem;
 }
 
 
