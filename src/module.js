@@ -1,7 +1,7 @@
 // FIRST MODULE
 
 function homepage() {
-// Content the DOM element content
+// Select the DOM element content
 const content = document.getElementById("content"); 
 
 
