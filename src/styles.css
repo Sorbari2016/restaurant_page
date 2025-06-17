@@ -207,6 +207,10 @@ hr {
     .card, .placard {
         width: 200px;
     }
+
+    form button {
+        margin-left: 0;
+    }
 }
 
 
