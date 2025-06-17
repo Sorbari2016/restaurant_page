@@ -204,8 +204,12 @@ hr {
         align-items: center;
     } */
 
-    .card, .placard {
+    /* .card, .placard {
         width: 200px;
+    } */
+
+    form button{
+        margin-left: 0;
     }
 }
 
